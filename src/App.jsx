@@ -17,7 +17,7 @@ function App() {
   const handleAddCountry = (event) => {
     event.preventDefault();
 
-    const newCountries =
+    const newCountries = 
     {
       id: new Date().getTime(),
       country: country, //country는 변수인데 왜 {}이걸 안씌워져도됨? -> 이건 return문 밑에에서만 여기선 jvscript gram as is 
@@ -33,6 +33,7 @@ function App() {
   const handleUpdateCountry = (event) => {
     event.preventDefault();
     const existCountry = countries.find((item)=>{return item.country === country})
+    console.log(existCountry);
     if(existCountry){
     setCountries(
       countries.map((item)=>{
@@ -56,8 +57,10 @@ function App() {
 
 const handleDeleteCountry = (id) => {
   // 삭제로직
-  const filteredId = countries.filter((item)=>{return item.id!==country.id})
+  const filteredId = countries.filter((item)=>{return item.id!==id})
   //유저가 클릭한 버튼 id 필터
+  setCountries[filteredId]
+  console.log(filteredId)
   //유저가 누른것만 빼고 새배열 만들기 
 };
 
@@ -115,8 +118,8 @@ return (
         <p className="listContentsBox">액션</p>
       </div>
 
-      {countries.map((country) => {
-        return (<div className="listResult" key={idx} >
+      {countries.map((country,idx) => {
+        return (<div className="listResult" key={idx} > 
           <p className="listResultBox">{country.country}</p>
           <p className="listResultBox">{country.gold}</p>
           <p className="listResultBox">{country.sliver}</p>
