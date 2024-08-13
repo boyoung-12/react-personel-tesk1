@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ width: 1200px;
+  margin: 40px auto 0px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  gap: 20px;
+  box-sizing: content-box;
+}
+
+
+
+.inputContents {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+  width:1160px;
+}
+.inputContentsBox {
+  border:transparent;
+  width:20%;
+  height:5px;
+
+}
+
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width:1160px;
+}
+.inputTextBox{
+  width:20%;
+  border-radius:5px;
+}
+.inputButtonBox{
+  width:10%; 
+  height:40px;
+  background:orange;
+  border-radius:5px;
+}
+
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width:1160px;
+}
+
+.listContents {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+  background:navy;
+  border-radius:5px;
+  height:40px;
+}
+.listContentsBox{
+  border:transparent;
+  width:20%;
+  height:5px;
+  color:white;
+}
+
+
+.listResult{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+  width:1160px;
+  background:green;
+  border-radius:5px;
+  height:50px;
+}
+.listResultBox{
+  width:20%;
+  height:20px;
+  color:black;
+}
+.deleteButton{
+background:red;
+height:30px;
+width:20%;
+color:black;
+}
